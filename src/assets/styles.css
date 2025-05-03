@@ -1,0 +1,37 @@
+/* universal */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: sans-serif;
+  background: #0d76d9;
+  background: linear-gradient(90deg,
+      rgba(13, 118, 217, 1) 0%,
+      rgba(0, 212, 255, 1) 100%);
+}
+
+/* classes */
+.container {
+  display: flex;
+  justify-content: center;
+
+  padding: 10px 10px;
+  margin: 30px auto 0;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px #000;
+
+  width: 80%;
+  max-width: 500px;
+
+  background-color: #fff;
+}
+
+/* @media */
+@media (min-width: 1280px) {
+  .container {
+    width: 85%;
+    max-width: 1250px;
+    background-color: green;
+  }
+}
