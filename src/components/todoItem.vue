@@ -4,7 +4,7 @@
   <li class="todoItem">
     <div class="left">
       <i class="fa-regular fa-circle"></i>
-      <span>test task</span>
+      <span class="text">test task</span>
     </div>
     <!--./left-->
 

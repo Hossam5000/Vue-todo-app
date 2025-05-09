@@ -6,6 +6,8 @@ import todoItem from "./components/todoItem.vue";
 // cons & vars
 const inputNewTodo = ref("");
 const newTime = ref("");
+let todos = ref([]);
+
 // functions
 function addTodo() {
   const todo = {
@@ -15,13 +17,14 @@ function addTodo() {
   };
 
   newTime.value = todo.time;
+  todos.value.push(todo.text);
   inputNewTodo.value = "";
 }
 </script>
 
 <template>
   <h2 class="title">TODO APP</h2>
-  {{ newTime }}
+  {{ todos }}
   <div class="app-container">
     <div class="head-container">
       <input v-model="inputNewTodo" placeholder="Add new todo" />
