@@ -9,10 +9,11 @@
     <!--./left-->
 
     <div class="right">
-      <span class="edit-btn"
-        ><i class="fa-solid fa-pen-to-square"></i>
-        <span class="delete-btn"><i class="fa-solid fa-trash"></i></span>
+      <span class="edit-btn">
+        <i class="fa-solid fa-pen-to-square"></i>
       </span>
+
+      <span class="delete-btn"><i class="fa-solid fa-trash"></i></span>
     </div>
     <!--./right-->
   </li>
@@ -39,17 +40,28 @@ li.todoItem:hover {
 
 .left i {
   margin-right: 5px;
+  font-size: 20px;
+}
+
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .right span i {
   color: #000;
 }
 
-.right span .delete-btn:hover {
+.right .delete-btn {
+  margin-left: 20px;
+}
+
+.right .delete-btn i:hover {
   color: red;
 }
 
-.right span .edit-btn {
+.right .edit-btn i:hover {
   color: dodgerblue;
 }
 </style>

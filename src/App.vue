@@ -72,7 +72,7 @@ h2 {
 
 ul.todoList {
   /* border: 1px solid #000; */
-  margin-top: 10px;
+  margin-top: 30px;
   padding: 0 10px;
 }
 
