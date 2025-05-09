@@ -5,16 +5,27 @@ import todoItem from "./components/todoItem.vue";
 
 // cons & vars
 const inputNewTodo = ref("");
-
+const newTime = ref("");
 // functions
+function addTodo() {
+  const todo = {
+    text: inputNewTodo.value,
+    completed: false,
+    time: Date.now(),
+  };
+
+  newTime.value = todo.time;
+  inputNewTodo.value = "";
+}
 </script>
 
 <template>
   <h2 class="title">TODO APP</h2>
+  {{ newTime }}
   <div class="app-container">
     <div class="head-container">
       <input v-model="inputNewTodo" placeholder="Add new todo" />
-      <button>ADD</button>
+      <button @click="addTodo">ADD</button>
     </div>
     <!--./head-container-->
     <!-- todo list -->
