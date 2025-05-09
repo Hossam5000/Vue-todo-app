@@ -5,10 +5,12 @@ body {
   box-sizing: border-box;
 
   font-family: sans-serif;
-  background: #0d76d9;
-  background: linear-gradient(90deg,
-      rgba(13, 118, 217, 1) 0%,
-      rgba(0, 212, 255, 1) 100%);
+  background: #8558f5;
+  background: linear-gradient(
+    136deg,
+    rgba(133, 88, 245, 1) 0%,
+    rgba(28, 130, 255, 1) 100%
+  );
 }
 
 /* classes */
@@ -27,11 +29,15 @@ body {
   background-color: #fff;
 }
 
+#app {
+  width: 100%;
+}
+
 /* @media */
 @media (min-width: 1280px) {
   .container {
     width: 85%;
-    max-width: 1250px;
+    max-width: 500px;
     background-color: green;
   }
 }
