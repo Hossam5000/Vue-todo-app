@@ -14,14 +14,14 @@
         "@fortawesome/free-regular-svg-icons": "^6.7.2",
         "@fortawesome/free-solid-svg-icons": "^6.7.2",
         "@fortawesome/vue-fontawesome": "^3.0.8",
+        "@vitejs/plugin-vue": "^5.2.3",
         "git": "^0.1.5",
+        "vite": "^6.3.5",
         "vue": "^3.5.13"
       },
       "devDependencies": {
-        "@vitejs/plugin-vue": "^5.2.3",
         "babel-eslint": "^10.1.0",
-        "eslint": "^7.2.0",
-        "vite": "^6.3.5"
+        "eslint": "^7.2.0"
       }
     },
     "node_modules/@aashutoshrathi/word-wrap": {
@@ -304,8 +304,11 @@
       "cpu": [
         "ppc64"
       ],
+<<<<<<< HEAD
       "dev": true,
       "license": "MIT",
+=======
+>>>>>>> ea5b6fb8e8b9a3cbbf5aef626fc14cf607be3b12
       "optional": true,
       "os": [
         "aix"
@@ -321,8 +324,11 @@
       "cpu": [
         "arm"
       ],
+<<<<<<< HEAD
       "dev": true,
       "license": "MIT",
+=======
+>>>>>>> ea5b6fb8e8b9a3cbbf5aef626fc14cf607be3b12
       "optional": true,
       "os": [
         "android"
@@ -338,8 +344,11 @@
       "cpu": [
         "arm64"
       ],
+<<<<<<< HEAD
       "dev": true,
       "license": "MIT",
+=======
+>>>>>>> ea5b6fb8e8b9a3cbbf5aef626fc14cf607be3b12
       "optional": true,
       "os": [
         "android"
@@ -355,8 +364,11 @@
       "cpu": [
         "x64"
       ],
+<<<<<<< HEAD
       "dev": true,
       "license": "MIT",
+=======
+>>>>>>> ea5b6fb8e8b9a3cbbf5aef626fc14cf607be3b12
       "optional": true,
       "os": [
         "android"
@@ -372,8 +384,11 @@
       "cpu": [
         "arm64"
       ],
+<<<<<<< HEAD
       "dev": true,
       "license": "MIT",
+=======
+>>>>>>> ea5b6fb8e8b9a3cbbf5aef626fc14cf607be3b12
       "optional": true,
       "os": [
         "darwin"
@@ -389,8 +404,11 @@
       "cpu": [
         "x64"
       ],
+<<<<<<< HEAD
       "dev": true,
       "license": "MIT",
+=======
+>>>>>>> ea5b6fb8e8b9a3cbbf5aef626fc14cf607be3b12
       "optional": true,
       "os": [
         "darwin"
@@ -406,8 +424,11 @@
       "cpu": [
         "arm64"
       ],
+<<<<<<< HEAD
       "dev": true,
       "license": "MIT",
+=======
+>>>>>>> ea5b6fb8e8b9a3cbbf5aef626fc14cf607be3b12
       "optional": true,
       "os": [
         "freebsd"
@@ -423,8 +444,11 @@
       "cpu": [
         "x64"
       ],
+<<<<<<< HEAD
       "dev": true,
       "license": "MIT",
+=======
+>>>>>>> ea5b6fb8e8b9a3cbbf5aef626fc14cf607be3b12
       "optional": true,
       "os": [
         "freebsd"
@@ -440,8 +464,11 @@
       "cpu": [
         "arm"
       ],
+<<<<<<< HEAD
       "dev": true,
       "license": "MIT",
+=======
+>>>>>>> ea5b6fb8e8b9a3cbbf5aef626fc14cf607be3b12
       "optional": true,
       "os": [
         "linux"
@@ -457,8 +484,11 @@
       "cpu": [
         "arm64"
       ],
+<<<<<<< HEAD
       "dev": true,
       "license": "MIT",
+=======
+>>>>>>> ea5b6fb8e8b9a3cbbf5aef626fc14cf607be3b12
       "optional": true,
       "os": [
         "linux"
@@ -474,8 +504,11 @@
       "cpu": [
         "ia32"
       ],
+<<<<<<< HEAD
       "dev": true,
       "license": "MIT",
+=======
+>>>>>>> ea5b6fb8e8b9a3cbbf5aef626fc14cf607be3b12
       "optional": true,
       "os": [
         "linux"
@@ -491,8 +524,11 @@
       "cpu": [
         "loong64"
       ],
+<<<<<<< HEAD
       "dev": true,
       "license": "MIT",
+=======
+>>>>>>> ea5b6fb8e8b9a3cbbf5aef626fc14cf607be3b12
       "optional": true,
       "os": [
         "linux"
@@ -508,8 +544,11 @@
       "cpu": [
         "mips64el"
       ],
+<<<<<<< HEAD
       "dev": true,
       "license": "MIT",
+=======
+>>>>>>> ea5b6fb8e8b9a3cbbf5aef626fc14cf607be3b12
       "optional": true,
       "os": [
         "linux"
@@ -525,8 +564,11 @@
       "cpu": [
         "ppc64"
       ],
+<<<<<<< HEAD
       "dev": true,
       "license": "MIT",
+=======
+>>>>>>> ea5b6fb8e8b9a3cbbf5aef626fc14cf607be3b12
       "optional": true,
       "os": [
         "linux"
@@ -542,8 +584,11 @@
       "cpu": [
         "riscv64"
       ],
+<<<<<<< HEAD
       "dev": true,
       "license": "MIT",
+=======
+>>>>>>> ea5b6fb8e8b9a3cbbf5aef626fc14cf607be3b12
       "optional": true,
       "os": [
         "linux"
@@ -559,8 +604,11 @@
       "cpu": [
         "s390x"
       ],
+<<<<<<< HEAD
       "dev": true,
       "license": "MIT",
+=======
+>>>>>>> ea5b6fb8e8b9a3cbbf5aef626fc14cf607be3b12
       "optional": true,
       "os": [
         "linux"
@@ -576,8 +624,11 @@
       "cpu": [
         "x64"
       ],
+<<<<<<< HEAD
       "dev": true,
       "license": "MIT",
+=======
+>>>>>>> ea5b6fb8e8b9a3cbbf5aef626fc14cf607be3b12
       "optional": true,
       "os": [
         "linux"
@@ -593,8 +644,11 @@
       "cpu": [
         "arm64"
       ],
+<<<<<<< HEAD
       "dev": true,
       "license": "MIT",
+=======
+>>>>>>> ea5b6fb8e8b9a3cbbf5aef626fc14cf607be3b12
       "optional": true,
       "os": [
         "netbsd"
@@ -610,8 +664,11 @@
       "cpu": [
         "x64"
       ],
+<<<<<<< HEAD
       "dev": true,
       "license": "MIT",
+=======
+>>>>>>> ea5b6fb8e8b9a3cbbf5aef626fc14cf607be3b12
       "optional": true,
       "os": [
         "netbsd"
@@ -627,8 +684,11 @@
       "cpu": [
         "arm64"
       ],
+<<<<<<< HEAD
       "dev": true,
       "license": "MIT",
+=======
+>>>>>>> ea5b6fb8e8b9a3cbbf5aef626fc14cf607be3b12
       "optional": true,
       "os": [
         "openbsd"
@@ -644,8 +704,11 @@
       "cpu": [
         "x64"
       ],
+<<<<<<< HEAD
       "dev": true,
       "license": "MIT",
+=======
+>>>>>>> ea5b6fb8e8b9a3cbbf5aef626fc14cf607be3b12
       "optional": true,
       "os": [
         "openbsd"
@@ -661,8 +724,11 @@
       "cpu": [
         "x64"
       ],
+<<<<<<< HEAD
       "dev": true,
       "license": "MIT",
+=======
+>>>>>>> ea5b6fb8e8b9a3cbbf5aef626fc14cf607be3b12
       "optional": true,
       "os": [
         "sunos"
@@ -678,8 +744,11 @@
       "cpu": [
         "arm64"
       ],
+<<<<<<< HEAD
       "dev": true,
       "license": "MIT",
+=======
+>>>>>>> ea5b6fb8e8b9a3cbbf5aef626fc14cf607be3b12
       "optional": true,
       "os": [
         "win32"
@@ -695,8 +764,11 @@
       "cpu": [
         "ia32"
       ],
+<<<<<<< HEAD
       "dev": true,
       "license": "MIT",
+=======
+>>>>>>> ea5b6fb8e8b9a3cbbf5aef626fc14cf607be3b12
       "optional": true,
       "os": [
         "win32"
@@ -712,8 +784,11 @@
       "cpu": [
         "x64"
       ],
+<<<<<<< HEAD
       "dev": true,
       "license": "MIT",
+=======
+>>>>>>> ea5b6fb8e8b9a3cbbf5aef626fc14cf607be3b12
       "optional": true,
       "os": [
         "win32"
@@ -884,8 +959,11 @@
       "cpu": [
         "arm"
       ],
+<<<<<<< HEAD
       "dev": true,
       "license": "MIT",
+=======
+>>>>>>> ea5b6fb8e8b9a3cbbf5aef626fc14cf607be3b12
       "optional": true,
       "os": [
         "android"
@@ -898,8 +976,11 @@
       "cpu": [
         "arm64"
       ],
+<<<<<<< HEAD
       "dev": true,
       "license": "MIT",
+=======
+>>>>>>> ea5b6fb8e8b9a3cbbf5aef626fc14cf607be3b12
       "optional": true,
       "os": [
         "android"
@@ -912,8 +993,11 @@
       "cpu": [
         "arm64"
       ],
+<<<<<<< HEAD
       "dev": true,
       "license": "MIT",
+=======
+>>>>>>> ea5b6fb8e8b9a3cbbf5aef626fc14cf607be3b12
       "optional": true,
       "os": [
         "darwin"
@@ -926,8 +1010,11 @@
       "cpu": [
         "x64"
       ],
+<<<<<<< HEAD
       "dev": true,
       "license": "MIT",
+=======
+>>>>>>> ea5b6fb8e8b9a3cbbf5aef626fc14cf607be3b12
       "optional": true,
       "os": [
         "darwin"
@@ -940,8 +1027,11 @@
       "cpu": [
         "arm64"
       ],
+<<<<<<< HEAD
       "dev": true,
       "license": "MIT",
+=======
+>>>>>>> ea5b6fb8e8b9a3cbbf5aef626fc14cf607be3b12
       "optional": true,
       "os": [
         "freebsd"
@@ -954,8 +1044,11 @@
       "cpu": [
         "x64"
       ],
+<<<<<<< HEAD
       "dev": true,
       "license": "MIT",
+=======
+>>>>>>> ea5b6fb8e8b9a3cbbf5aef626fc14cf607be3b12
       "optional": true,
       "os": [
         "freebsd"
@@ -968,8 +1061,11 @@
       "cpu": [
         "arm"
       ],
+<<<<<<< HEAD
       "dev": true,
       "license": "MIT",
+=======
+>>>>>>> ea5b6fb8e8b9a3cbbf5aef626fc14cf607be3b12
       "optional": true,
       "os": [
         "linux"
@@ -982,8 +1078,11 @@
       "cpu": [
         "arm"
       ],
+<<<<<<< HEAD
       "dev": true,
       "license": "MIT",
+=======
+>>>>>>> ea5b6fb8e8b9a3cbbf5aef626fc14cf607be3b12
       "optional": true,
       "os": [
         "linux"
@@ -996,8 +1095,11 @@
       "cpu": [
         "arm64"
       ],
+<<<<<<< HEAD
       "dev": true,
       "license": "MIT",
+=======
+>>>>>>> ea5b6fb8e8b9a3cbbf5aef626fc14cf607be3b12
       "optional": true,
       "os": [
         "linux"
@@ -1010,8 +1112,11 @@
       "cpu": [
         "arm64"
       ],
+<<<<<<< HEAD
       "dev": true,
       "license": "MIT",
+=======
+>>>>>>> ea5b6fb8e8b9a3cbbf5aef626fc14cf607be3b12
       "optional": true,
       "os": [
         "linux"
@@ -1024,8 +1129,11 @@
       "cpu": [
         "loong64"
       ],
+<<<<<<< HEAD
       "dev": true,
       "license": "MIT",
+=======
+>>>>>>> ea5b6fb8e8b9a3cbbf5aef626fc14cf607be3b12
       "optional": true,
       "os": [
         "linux"
@@ -1038,8 +1146,11 @@
       "cpu": [
         "ppc64"
       ],
+<<<<<<< HEAD
       "dev": true,
       "license": "MIT",
+=======
+>>>>>>> ea5b6fb8e8b9a3cbbf5aef626fc14cf607be3b12
       "optional": true,
       "os": [
         "linux"
@@ -1052,8 +1163,11 @@
       "cpu": [
         "riscv64"
       ],
+<<<<<<< HEAD
       "dev": true,
       "license": "MIT",
+=======
+>>>>>>> ea5b6fb8e8b9a3cbbf5aef626fc14cf607be3b12
       "optional": true,
       "os": [
         "linux"
@@ -1066,8 +1180,11 @@
       "cpu": [
         "riscv64"
       ],
+<<<<<<< HEAD
       "dev": true,
       "license": "MIT",
+=======
+>>>>>>> ea5b6fb8e8b9a3cbbf5aef626fc14cf607be3b12
       "optional": true,
       "os": [
         "linux"
@@ -1080,8 +1197,11 @@
       "cpu": [
         "s390x"
       ],
+<<<<<<< HEAD
       "dev": true,
       "license": "MIT",
+=======
+>>>>>>> ea5b6fb8e8b9a3cbbf5aef626fc14cf607be3b12
       "optional": true,
       "os": [
         "linux"
@@ -1094,8 +1214,11 @@
       "cpu": [
         "x64"
       ],
+<<<<<<< HEAD
       "dev": true,
       "license": "MIT",
+=======
+>>>>>>> ea5b6fb8e8b9a3cbbf5aef626fc14cf607be3b12
       "optional": true,
       "os": [
         "linux"
@@ -1108,8 +1231,11 @@
       "cpu": [
         "x64"
       ],
+<<<<<<< HEAD
       "dev": true,
       "license": "MIT",
+=======
+>>>>>>> ea5b6fb8e8b9a3cbbf5aef626fc14cf607be3b12
       "optional": true,
       "os": [
         "linux"
@@ -1122,8 +1248,11 @@
       "cpu": [
         "arm64"
       ],
+<<<<<<< HEAD
       "dev": true,
       "license": "MIT",
+=======
+>>>>>>> ea5b6fb8e8b9a3cbbf5aef626fc14cf607be3b12
       "optional": true,
       "os": [
         "win32"
@@ -1136,8 +1265,11 @@
       "cpu": [
         "ia32"
       ],
+<<<<<<< HEAD
       "dev": true,
       "license": "MIT",
+=======
+>>>>>>> ea5b6fb8e8b9a3cbbf5aef626fc14cf607be3b12
       "optional": true,
       "os": [
         "win32"
@@ -1150,8 +1282,11 @@
       "cpu": [
         "x64"
       ],
+<<<<<<< HEAD
       "dev": true,
       "license": "MIT",
+=======
+>>>>>>> ea5b6fb8e8b9a3cbbf5aef626fc14cf607be3b12
       "optional": true,
       "os": [
         "win32"
@@ -1160,16 +1295,23 @@
     "node_modules/@types/estree": {
       "version": "1.0.7",
       "resolved": "https://registry.npmjs.org/@types/estree/-/estree-1.0.7.tgz",
+<<<<<<< HEAD
       "integrity": "sha512-w28IoSUCJpidD/TGviZwwMJckNESJZXFu7NBZ5YJ4mEUnNraUn9Pm8HSZm/jDF1pDWYKspWE7oVphigUPRakIQ==",
       "dev": true,
       "license": "MIT"
+=======
+      "integrity": "sha512-w28IoSUCJpidD/TGviZwwMJckNESJZXFu7NBZ5YJ4mEUnNraUn9Pm8HSZm/jDF1pDWYKspWE7oVphigUPRakIQ=="
+>>>>>>> ea5b6fb8e8b9a3cbbf5aef626fc14cf607be3b12
     },
     "node_modules/@vitejs/plugin-vue": {
       "version": "5.2.3",
       "resolved": "https://registry.npmjs.org/@vitejs/plugin-vue/-/plugin-vue-5.2.3.tgz",
       "integrity": "sha512-IYSLEQj4LgZZuoVpdSUCw3dIynTWQgPlaRP6iAvMle4My0HdYwr5g5wQAfwOeHQBmYwEkqF70nRpSilr6PoUDg==",
+<<<<<<< HEAD
       "dev": true,
       "license": "MIT",
+=======
+>>>>>>> ea5b6fb8e8b9a3cbbf5aef626fc14cf607be3b12
       "engines": {
         "node": "^18.0.0 || >=20.0.0"
       },
@@ -1551,7 +1693,10 @@
       "version": "0.25.4",
       "resolved": "https://registry.npmjs.org/esbuild/-/esbuild-0.25.4.tgz",
       "integrity": "sha512-8pgjLUcUjcgDg+2Q4NYXnPbo/vncAY4UmyaCm0jZevERqCHZIaWwdJHkf8XQtu4AxSKCdvrUbT0XUr1IdZzI8Q==",
+<<<<<<< HEAD
       "dev": true,
+=======
+>>>>>>> ea5b6fb8e8b9a3cbbf5aef626fc14cf607be3b12
       "hasInstallScript": true,
       "license": "MIT",
       "bin": {
@@ -1834,8 +1979,11 @@
       "version": "6.4.4",
       "resolved": "https://registry.npmjs.org/fdir/-/fdir-6.4.4.tgz",
       "integrity": "sha512-1NZP+GK4GfuAv3PqKvxQRDMjdSRZjnkq7KfhlNrCNNlZ0ygQFpebfrnfnq/W7fpUnAv9aGWmY1zKx7FYL3gwhg==",
+<<<<<<< HEAD
       "dev": true,
       "license": "MIT",
+=======
+>>>>>>> ea5b6fb8e8b9a3cbbf5aef626fc14cf607be3b12
       "peerDependencies": {
         "picomatch": "^3 || ^4"
       },
@@ -1891,7 +2039,6 @@
       "version": "2.3.3",
       "resolved": "https://registry.npmjs.org/fsevents/-/fsevents-2.3.3.tgz",
       "integrity": "sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==",
-      "dev": true,
       "hasInstallScript": true,
       "license": "MIT",
       "optional": true,
@@ -2350,8 +2497,11 @@
       "version": "4.0.2",
       "resolved": "https://registry.npmjs.org/picomatch/-/picomatch-4.0.2.tgz",
       "integrity": "sha512-M7BAV6Rlcy5u+m6oPhAPFgJTzAioX/6B0DxyvDlo9l8+T3nLKbrczg2WLUyzd45L8RqfUMyGPzekbMvX2Ldkwg==",
+<<<<<<< HEAD
       "dev": true,
       "license": "MIT",
+=======
+>>>>>>> ea5b6fb8e8b9a3cbbf5aef626fc14cf607be3b12
       "engines": {
         "node": ">=12"
       },
@@ -2487,8 +2637,11 @@
       "version": "4.40.2",
       "resolved": "https://registry.npmjs.org/rollup/-/rollup-4.40.2.tgz",
       "integrity": "sha512-tfUOg6DTP4rhQ3VjOO6B4wyrJnGOX85requAXvqYTHsOgb2TFJdZ3aWpT8W2kPoypSGP7dZUyzxJ9ee4buM5Fg==",
+<<<<<<< HEAD
       "dev": true,
       "license": "MIT",
+=======
+>>>>>>> ea5b6fb8e8b9a3cbbf5aef626fc14cf607be3b12
       "dependencies": {
         "@types/estree": "1.0.7"
       },
@@ -2714,8 +2867,11 @@
       "version": "0.2.13",
       "resolved": "https://registry.npmjs.org/tinyglobby/-/tinyglobby-0.2.13.tgz",
       "integrity": "sha512-mEwzpUgrLySlveBwEVDMKk5B57bhLPYovRfPAXD5gA/98Opn0rCDj3GtLwFvCvH5RK9uPCExUROW5NjDwvqkxw==",
+<<<<<<< HEAD
       "dev": true,
       "license": "MIT",
+=======
+>>>>>>> ea5b6fb8e8b9a3cbbf5aef626fc14cf607be3b12
       "dependencies": {
         "fdir": "^6.4.4",
         "picomatch": "^4.0.2"
@@ -2774,8 +2930,6 @@
       "version": "6.3.5",
       "resolved": "https://registry.npmjs.org/vite/-/vite-6.3.5.tgz",
       "integrity": "sha512-cZn6NDFE7wdTpINgs++ZJ4N49W2vRp8LCKrn3Ob1kYNtOo21vfDoaV5GzBfLU4MovSAB8uNRm4jgzVQZ+mBzPQ==",
-      "dev": true,
-      "license": "MIT",
       "dependencies": {
         "esbuild": "^0.25.0",
         "fdir": "^6.4.4",
