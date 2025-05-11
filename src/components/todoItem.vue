@@ -1,7 +1,7 @@
 <script setup>
 const props = defineProps([
   {
-    taskTitle: "create a new video",
+    taskTitle: String,
   },
 ]);
 </script>

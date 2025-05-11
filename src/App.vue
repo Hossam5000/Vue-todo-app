@@ -6,7 +6,7 @@ import todoItem from "./components/todoItem.vue";
 // cons & vars
 const inputNewTodo = ref("");
 const newTime = ref("");
-let todos = ref([34, 64]);
+let todos = ref([]);
 
 // functions
 function addTodo() {
@@ -17,7 +17,7 @@ function addTodo() {
   };
 
   newTime.value = todo.time;
-  todos.value.push(todo.text);
+  todos.value.push(todo);
   inputNewTodo.value = "";
 }
 </script>
@@ -33,7 +33,7 @@ function addTodo() {
     <!--./head-container-->
     <!-- todo list -->
     <ul class="todoList">
-      <todoItem :task-title />
+      <todoItem task-title="inputNewTodo" />
       <todoItem task-title="work out for an hour" />
       <todoItem task-title="buy some vegetables" />
     </ul>
