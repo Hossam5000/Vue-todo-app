@@ -1,15 +1,18 @@
 /* styles.css */
 /* universal */
 body {
+  height: 100vh;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 
   font-family: sans-serif;
   background: #8558f5;
-  background: linear-gradient(136deg,
-      rgba(133, 88, 245, 1) 0%,
-      rgba(28, 130, 255, 1) 100%);
+  background: linear-gradient(
+    136deg,
+    rgba(133, 88, 245, 1) 0%,
+    rgba(28, 130, 255, 1) 100%
+  );
 }
 
 /* classes */
