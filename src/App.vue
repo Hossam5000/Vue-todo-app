@@ -33,7 +33,7 @@ function addTodo() {
     <!--./head-container-->
     <!-- todo list -->
     <ul class="todoList">
-      <todoItem task-title="create a new video" />
+      <todoItem :task-title />
       <todoItem task-title="work out for an hour" />
       <todoItem task-title="buy some vegetables" />
     </ul>

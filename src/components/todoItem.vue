@@ -1,12 +1,16 @@
 <script setup>
-const props = defineProps(['taskTitle']);
+const props = defineProps([
+  {
+    taskTitle: "create a new video",
+  },
+]);
 </script>
 
 <template>
   <li class="todoItem">
     <div class="left">
       <i class="fa-regular fa-circle"></i>
-      <span class="text">{{ taskTitle }}</span>
+      <span class="text">{{ props.taskTitle }}</span>
     </div>
     <!--./left-->
 
