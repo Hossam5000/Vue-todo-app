@@ -6,7 +6,7 @@ import todoItem from "./components/todoItem.vue";
 // cons & vars
 const inputNewTodo = ref("");
 const newTime = ref("");
-let todos = ref([]);
+let todos = ref([34, 64]);
 
 // functions
 function addTodo() {
@@ -33,9 +33,9 @@ function addTodo() {
     <!--./head-container-->
     <!-- todo list -->
     <ul class="todoList">
-      <todoItem />
-      <todoItem />
-      <todoItem />
+      <todoItem task-title="create a new video" />
+      <todoItem task-title="work out for an hour" />
+      <todoItem task-title="buy some vegetables" />
     </ul>
   </div>
   <!--./app-container-->
@@ -44,6 +44,7 @@ function addTodo() {
 </template>
 
 <style scoped>
+/* App.css */
 * {
   margin: 0;
   padding: 0;

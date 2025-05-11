@@ -1,3 +1,4 @@
+/* styles.css */
 /* universal */
 body {
   margin: 0;
@@ -6,11 +7,9 @@ body {
 
   font-family: sans-serif;
   background: #8558f5;
-  background: linear-gradient(
-    136deg,
-    rgba(133, 88, 245, 1) 0%,
-    rgba(28, 130, 255, 1) 100%
-  );
+  background: linear-gradient(136deg,
+      rgba(133, 88, 245, 1) 0%,
+      rgba(28, 130, 255, 1) 100%);
 }
 
 /* classes */
@@ -38,6 +37,5 @@ body {
   .container {
     width: 85%;
     max-width: 500px;
-    background-color: green;
   }
 }

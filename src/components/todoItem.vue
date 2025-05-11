@@ -1,10 +1,12 @@
-<script setup></script>
+<script setup>
+const props = defineProps(['taskTitle']);
+</script>
 
 <template>
   <li class="todoItem">
     <div class="left">
       <i class="fa-regular fa-circle"></i>
-      <span class="text">test task</span>
+      <span class="text">{{ taskTitle }}</span>
     </div>
     <!--./left-->
 
@@ -20,6 +22,7 @@
 </template>
 
 <style scoped>
+/* todoItem.css */
 li.todoItem {
   display: flex;
   justify-content: space-between;
