@@ -7,6 +7,13 @@ import todoItem from "./components/todoItem.vue";
 const inputNewTodo = ref("");
 const newTime = ref("");
 let todos = ref([]);
+const posts = [
+  { title: "how to learn vue.js", likes: 32 },
+  { title: "starting a new business", likes: 94 },
+  { title: "playing video games remotely", likes: 21 },
+  { title: "working out at home", likes: 54 },
+
+];
 
 // functions
 function addTodo() {
@@ -31,16 +38,15 @@ function addTodo() {
       <button @click="addTodo">ADD</button>
     </div>
     <!--./head-container-->
+
     <!-- todo list -->
     <ul class="todoList">
-      <todoItem task-title="inputNewTodo" />
-      <todoItem task-title="work out for an hour" />
-      <todoItem task-title="buy some vegetables" />
+      <todoItem v-for="(post, index) in posts" :key="index" :task-title="post.title + ' likes no. ' + post.likes" />
     </ul>
+
   </div>
   <!--./app-container-->
 
-  <!--./container-->
 </template>
 
 <style scoped>

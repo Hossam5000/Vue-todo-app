@@ -1,9 +1,8 @@
 <script setup>
-const props = defineProps([
-  {
-    taskTitle: String,
-  },
-]);
+const props = defineProps({
+  taskTitle: String,
+  doneTimes: Number,
+});
 </script>
 
 <template>
@@ -11,6 +10,7 @@ const props = defineProps([
     <div class="left">
       <i class="fa-regular fa-circle"></i>
       <span class="text">{{ props.taskTitle }}</span>
+      <span class="text">{{ props.doneTimes }}</span>
     </div>
     <!--./left-->
 
