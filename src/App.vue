@@ -1,47 +1,59 @@
 <script setup>
 // imports
 import { ref } from "vue";
+import { watch } from "vue";
+import { onMounted } from "vue";
+
 import todoItem from "./components/todoItem.vue";
 
 // cons & vars
 const inputNewTodo = ref("");
 const newTime = ref("");
 let todos = ref([]);
-const posts = [
-  { title: "how to learn vue.js", likes: 32 },
-  { title: "starting a new business", likes: 94 },
-  { title: "playing video games remotely", likes: 21 },
-  { title: "working out at home", likes: 54 },
-
-];
 
 // functions
 function addTodo() {
   const todo = {
     text: inputNewTodo.value,
     completed: false,
-    time: Date.now(),
   };
 
-  newTime.value = todo.time;
   todos.value.push(todo);
+  save();
   inputNewTodo.value = "";
 }
+
+function save(){
+   localStorage.setItem("todos", JSON.stringify(todos.value));
+};
+
+// watchers
+watch(todos, ()=>{
+  localStorage.setItem("todos", JSON.stringify(todos.value));
+}, {deep: true});
+
+// life-cycle-hooks
+onMounted(() => {
+  const savedTodos = localStorage.getItem("todos");
+  if (savedTodos) {
+    todos.value = JSON.parse(savedTodos); // Load stored tasks
+  }
+});
 </script>
 
 <template>
+  {{todos}}
   <h2 class="title">TODO APP</h2>
-  {{ todos }}
   <div class="app-container">
     <div class="head-container">
-      <input v-model="inputNewTodo" placeholder="Add new todo" />
+      <input @keyup.enter="addTodo" v-model="inputNewTodo" placeholder="Add new todo" />
       <button @click="addTodo">ADD</button>
     </div>
     <!--./head-container-->
 
     <!-- todo list -->
     <ul class="todoList">
-      <todoItem v-for="(post, index) in posts" :key="index" :task-title="post.title + ' likes no. ' + post.likes" />
+      <todoItem v-for="(todo, index) in todos" :key="index" :task-title="todo.text" />
     </ul>
 
   </div>

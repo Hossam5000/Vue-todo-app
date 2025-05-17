@@ -1,7 +1,7 @@
 <script setup>
 const props = defineProps({
   taskTitle: String,
-  doneTimes: Number,
+  taskCompleted: Boolean,
 });
 </script>
 
