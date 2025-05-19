@@ -49,7 +49,6 @@ onMounted(() => {
 </script>
 
 <template>
-  {{ todos }}
   <h2 class="title">TODO APP</h2>
   <div class="app-container">
     <div class="head-container">
@@ -77,7 +76,7 @@ onMounted(() => {
 }
 
 h2 {
-  margin: 10px auto;
+  margin: 30px auto 10px;
   text-align: center;
 }
 
