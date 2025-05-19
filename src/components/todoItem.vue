@@ -1,8 +1,11 @@
 <script setup>
+// cons & vars
 const props = defineProps({
   taskTitle: String,
   taskCompleted: Boolean,
 });
+
+// functions
 </script>
 
 <template>
@@ -19,7 +22,7 @@ const props = defineProps({
         <i class="fa-solid fa-pen-to-square"></i>
       </span>
 
-      <span class="delete-btn"><i class="fa-solid fa-trash"></i></span>
+      <span @click="$emit('delete')" class="delete-btn"><i class="fa-solid fa-trash"></i></span>
     </div>
     <!--./right-->
   </li>

@@ -23,26 +23,33 @@ function addTodo() {
   inputNewTodo.value = "";
 }
 
-function save(){
-   localStorage.setItem("todos", JSON.stringify(todos.value));
+function save() {
+  localStorage.setItem("todos", JSON.stringify(todos.value));
+};
+
+function load() {
+  todos.value = JSON.parse(localStorage.getItem("todos") || []);
+};
+
+function deleteTodo(index) {
+  todos.value.splice(index, 1);
+  save();
 };
 
 // watchers
-watch(todos, ()=>{
+watch(todos, () => {
   localStorage.setItem("todos", JSON.stringify(todos.value));
-}, {deep: true});
+}, { deep: true });
 
 // life-cycle-hooks
 onMounted(() => {
-  const savedTodos = localStorage.getItem("todos");
-  if (savedTodos) {
-    todos.value = JSON.parse(savedTodos); // Load stored tasks
-  }
-});
+  load();
+}
+);
 </script>
 
 <template>
-  {{todos}}
+  {{ todos }}
   <h2 class="title">TODO APP</h2>
   <div class="app-container">
     <div class="head-container">
@@ -53,7 +60,7 @@ onMounted(() => {
 
     <!-- todo list -->
     <ul class="todoList">
-      <todoItem v-for="(todo, index) in todos" :key="index" :task-title="todo.text" />
+      <todoItem v-for="(todo, index) in todos" :key="index" :task-title="todo.text" @delete="deleteTodo(index)" />
     </ul>
 
   </div>
