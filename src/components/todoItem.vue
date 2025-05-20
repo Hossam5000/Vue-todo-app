@@ -19,7 +19,7 @@ const props = defineProps({
 
     <div class="right">
       <span class="edit-btn">
-        <i class="fa-solid fa-pen-to-square"></i>
+        <i @click="$emit('cons', 1)" class="fa-solid fa-pen-to-square"></i>
       </span>
 
       <span @click="$emit('delete')" class="delete-btn"><i class="fa-solid fa-trash"></i></span>

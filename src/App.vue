@@ -36,6 +36,11 @@ function deleteTodo(index) {
   save();
 };
 
+function increase(n) {
+  n += 1;
+  console.log(`number of counts until now ${n}`);
+}
+
 // watchers
 watch(todos, () => {
   localStorage.setItem("todos", JSON.stringify(todos.value));
@@ -59,7 +64,8 @@ onMounted(() => {
 
     <!-- todo list -->
     <ul class="todoList">
-      <todoItem v-for="(todo, index) in todos" :key="index" :task-title="todo.text" @delete="deleteTodo(index)" />
+      <todoItem v-for="(todo, index) in todos" :key="index" :task-title="todo.text" @delete="deleteTodo(index)"
+        @cons="increase" />
     </ul>
 
   </div>
