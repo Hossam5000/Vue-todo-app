@@ -10,7 +10,9 @@ import todoItem from "./components/todoItem.vue";
 const inputNewTodo = ref("");
 const newTime = ref("");
 let todos = ref([]);
+let orders = ref([1, 2, 3, 4]);
 const age = ref(0);
+
 
 // functions
 function addTodo() {
@@ -28,8 +30,6 @@ function save() {
   localStorage.setItem("todos", JSON.stringify(todos.value));
 }
 
-watch(todos, save, { deep: true });
-
 function load() {
   todos.value = JSON.parse(localStorage.getItem("todos") || []);
 };
@@ -45,11 +45,10 @@ function increase(n) {
 }
 
 // watchers
+watch(() => [...orders.value], (currenValue, oldValue) => {
+  console.log(`current value is ${currenValue} and old value is ${oldValue}`);
+}, { deep: true });
 
-
-watch(age, (newValue, oldValue) => {
-  console.log(`the old value is ${oldValue} the new value is ${newValue}`)
-});
 
 // life-cycle-hooks
 onMounted(() => {
@@ -60,8 +59,7 @@ onMounted(() => {
 
 <template>
   <h2 class="title">TODO APP</h2>
-  <button @click="age++">increment</button>
-  {{ age }}
+  <button @click="orders.push(1)">add 1</button>
   <div class="app-container">
     <div class="head-container">
       <input @keyup.enter="addTodo" v-model="inputNewTodo" placeholder="Add new todo" />
