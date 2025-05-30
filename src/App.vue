@@ -25,7 +25,9 @@ function addTodo() {
 
 function save() {
   localStorage.setItem("todos", JSON.stringify(todos.value));
-};
+}
+
+watch(todos, save, { deep: true });
 
 function load() {
   todos.value = JSON.parse(localStorage.getItem("todos") || []);
@@ -42,9 +44,7 @@ function increase(n) {
 }
 
 // watchers
-watch(todos, () => {
-  localStorage.setItem("todos", JSON.stringify(todos.value));
-}, { deep: true });
+
 
 // life-cycle-hooks
 onMounted(() => {
