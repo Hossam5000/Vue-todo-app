@@ -1,24 +1,18 @@
 <script setup>
-// imports
-import { ref } from "vue";
-import { watch } from "vue";
-import { onMounted } from "vue";
-
+import { ref, onMounted } from "vue";
 import todoItem from "./components/todoItem.vue";
 
-// cons & vars
 const inputNewTodo = ref("");
-const newTime = ref("");
 let todos = ref([]);
-let orders = ref([1, 2, 3, 4]);
-const age = ref(0);
 
-
-// functions
 function addTodo() {
+  if (!inputNewTodo.value.trim()) return; // Prevent empty todos
+
   const todo = {
+    id: Date.now(), // Unique identifier
     text: inputNewTodo.value,
     completed: false,
+    editing: false, // Track edit mode
   };
 
   todos.value.push(todo);
@@ -31,51 +25,37 @@ function save() {
 }
 
 function load() {
-  todos.value = JSON.parse(localStorage.getItem("todos") || []);
-};
+  todos.value = JSON.parse(localStorage.getItem("todos") || "[]");
+}
 
 function deleteTodo(index) {
   todos.value.splice(index, 1);
   save();
-};
-
-function increase(n) {
-  n += 1;
-  console.log(`number of counts until now ${n}`);
 }
 
-// watchers
-watch(() => [...orders.value], (currenValue, oldValue) => {
-  console.log(`current value is ${currenValue} and old value is ${oldValue}`);
-}, { deep: true });
-
-
-// life-cycle-hooks
 onMounted(() => {
   load();
-}
-);
+});
 </script>
 
 <template>
   <h2 class="title">TODO APP</h2>
-  <button @click="orders.push(1)">add 1</button>
   <div class="app-container">
     <div class="head-container">
       <input @keyup.enter="addTodo" v-model="inputNewTodo" placeholder="Add new todo" />
       <button @click="addTodo">ADD</button>
     </div>
-    <!--./head-container-->
+    <!-- ./head-container -->
 
     <!-- todo list -->
     <ul class="todoList">
-      <todoItem v-for="(todo, index) in todos" :key="index" :task-title="todo.text" @delete="deleteTodo(index)"
-        @cons="increase" />
+      <todoItem v-for="todo in todos" :key="todo.id" :task-title="todo.text" :editing="todo.editing"
+        @toggleEdit="todo.editing = !todo.editing"
+        @updateTaskTitle="(newTitle) => { todo.text = newTitle; todo.editing = false; save(); }"
+        @delete="deleteTodo(todos.indexOf(todo))" />
     </ul>
-
   </div>
-  <!--./app-container-->
-
+  <!-- ./app-container -->
 </template>
 
 <style scoped>
@@ -121,7 +101,6 @@ h2 {
 }
 
 ul.todoList {
-  /* border: 1px solid #000; */
   margin-top: 30px;
   padding: 0 10px;
 }

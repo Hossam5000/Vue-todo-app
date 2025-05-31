@@ -1,30 +1,37 @@
 <script setup>
-// cons & vars
+import { ref } from "vue";
+
 const props = defineProps({
   taskTitle: String,
-  taskCompleted: Boolean,
+  editing: Boolean,
 });
 
-// functions
+const emits = defineEmits(["toggleEdit", "updateTaskTitle", "delete"]);
+
+const newTitle = ref(props.taskTitle);
 </script>
 
 <template>
   <li class="todoItem">
     <div class="left">
       <i class="fa-regular fa-circle"></i>
-      <span class="text">{{ props.taskTitle }}</span>
-      <span class="text">{{ props.doneTimes }}</span>
+
+      <!-- Toggle between text and input field -->
+      <span v-if="!props.editing" class="text">{{ props.taskTitle }}</span>
+      <input v-else v-model="newTitle" @keyup.enter="$emit('updateTaskTitle', newTitle)" />
     </div>
-    <!--./left-->
+    <!-- ./left -->
 
     <div class="right">
       <span class="edit-btn">
-        <i @click="$emit('cons', 1)" class="fa-solid fa-pen-to-square"></i>
+        <i @click="$emit('toggleEdit')" class="fa-solid fa-pen-to-square"></i>
       </span>
 
-      <span @click="$emit('delete')" class="delete-btn"><i class="fa-solid fa-trash"></i></span>
+      <span @click="$emit('delete')" class="delete-btn">
+        <i class="fa-solid fa-trash"></i>
+      </span>
     </div>
-    <!--./right-->
+    <!-- ./right -->
   </li>
 </template>
 
@@ -33,12 +40,10 @@ const props = defineProps({
 li.todoItem {
   display: flex;
   justify-content: space-between;
-
   margin: 10px 0;
   padding: 10px 5px;
   border-radius: 5px;
   border: 1px solid #ff0066;
-
   color: #000;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
