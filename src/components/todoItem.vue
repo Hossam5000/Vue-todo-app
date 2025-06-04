@@ -17,8 +17,7 @@ const newTitle = ref(props.taskTitle);
       <i class="fa-regular fa-circle"></i>
 
       <!-- Toggle between text and input field -->
-      <span v-if="!props.editing" class="text">{{ props.taskTitle }}</span>
-      <input v-else v-model="newTitle" @keyup.enter="$emit('updateTaskTitle', newTitle)" />
+      <input v-model="newTitle" @keyup.enter="$emit('updateTaskTitle', newTitle)" />
     </div>
     <!-- ./left -->
 
