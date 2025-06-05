@@ -5,6 +5,7 @@ import todoItem from "./components/todoItem.vue";
 const inputNewTodo = ref("");
 let todos = ref([]);
 
+// functions
 function addTodo() {
   if (!inputNewTodo.value.trim()) return; // Prevent empty todos
 
@@ -18,6 +19,10 @@ function addTodo() {
   todos.value.push(todo);
   save();
   inputNewTodo.value = "";
+}
+
+function editTodo() {
+
 }
 
 function save() {
@@ -49,9 +54,7 @@ onMounted(() => {
 
     <!-- todo list -->
     <ul class="todoList">
-      <todoItem v-for="todo in todos" :key="todo.id" :task-title="todo.text" :editing="todo.editing"
-        @toggleEdit="todo.editing = !todo.editing"
-        @updateTaskTitle="(newTitle) => { todo.text = newTitle; todo.editing = false; save(); }"
+      <todoItem v-for="todo in todos" :key="todo.id" :task-title="todo.text"
         @delete="deleteTodo(todos.indexOf(todo))" />
     </ul>
   </div>

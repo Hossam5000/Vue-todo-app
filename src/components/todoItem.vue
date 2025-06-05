@@ -1,29 +1,19 @@
 <script setup>
-import { ref } from "vue";
-
-const props = defineProps({
-  taskTitle: String,
-  editing: Boolean,
-});
-
-const emits = defineEmits(["toggleEdit", "updateTaskTitle", "delete"]);
-
-const newTitle = ref(props.taskTitle);
+// cons & vars
+const emits = defineEmits(["delete"]);
 </script>
 
 <template>
   <li class="todoItem">
     <div class="left">
       <i class="fa-regular fa-circle"></i>
-
-      <!-- Toggle between text and input field -->
-      <input v-model="newTitle" @keyup.enter="$emit('updateTaskTitle', newTitle)" />
+      <input v-model="newTitle" />
     </div>
     <!-- ./left -->
 
     <div class="right">
       <span class="edit-btn">
-        <i @click="$emit('toggleEdit')" class="fa-solid fa-pen-to-square"></i>
+        <i class="fa-solid fa-pen-to-square"></i>
       </span>
 
       <span @click="$emit('delete')" class="delete-btn">
