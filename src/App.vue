@@ -2,6 +2,7 @@
 import { ref, onMounted } from "vue";
 import todoItem from "./components/todoItem.vue";
 
+const props = defineProps(["taskTitle",]);
 const inputNewTodo = ref("");
 let todos = ref([]);
 
@@ -22,7 +23,7 @@ function addTodo() {
 }
 
 function editTodo() {
-
+  console.log("edit");
 }
 
 function save() {
@@ -54,8 +55,8 @@ onMounted(() => {
 
     <!-- todo list -->
     <ul class="todoList">
-      <todoItem v-for="todo in todos" :key="todo.id" :task-title="todo.text"
-        @delete="deleteTodo(todos.indexOf(todo))" />
+      <todoItem v-for="todo in todos" :key="todo.id" :task-title="todo.text" @delete="deleteTodo(todos.indexOf(todo))"
+        @edit="editTodo" />
     </ul>
   </div>
   <!-- ./app-container -->

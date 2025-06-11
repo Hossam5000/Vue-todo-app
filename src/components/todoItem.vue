@@ -1,18 +1,20 @@
 <script setup>
 // cons & vars
-const emits = defineEmits(["delete"]);
+
+const emits = defineEmits(["delete", "edit"]);
 </script>
 
 <template>
   <li class="todoItem">
+
     <div class="left">
       <i class="fa-regular fa-circle"></i>
-      <input v-model="newTitle" />
+      <input :value="taskTitle" />
     </div>
     <!-- ./left -->
 
     <div class="right">
-      <span class="edit-btn">
+      <span @click="$emit('edit')" class="edit-btn">
         <i class="fa-solid fa-pen-to-square"></i>
       </span>
 
